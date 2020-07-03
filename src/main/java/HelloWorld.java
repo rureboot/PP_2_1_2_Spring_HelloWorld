@@ -1,7 +1,9 @@
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class HelloWorld {
- 
-    private String message;
- 
+ private String message;
+    @DateTimeFormat(pattern = "dd/mm/yyyy")
+    private int age;
     public String getMessage() {
         return message;
     }
